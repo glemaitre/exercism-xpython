@@ -3,7 +3,5 @@
 #
 
 
-def hello(name='World'):
-    if not name:
-        name='World'
-    return 'Hello, '+name+'!'
+def hello(name=''):
+    return u'Hello, {}!'.format(name if name else 'World')
